@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage">
+
+    <Button
+        android:id="@+id/hg_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/hg_imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/photo_user01"
+        android:src="@drawable/hg_circle_images" />
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="85dp"
+        android:id="@+id/hg_lin_top"
+        android:layout_below="@+id/hg_imageView"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true">
+        <!--        资料-->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:id="@+id/hg_btn_profile"
+            android:text="资 料"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@drawable/concor_button" />
+
+        <!--        订阅-->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:id="@+id/hg_btn_subscribe"
+            android:layout_marginLeft="15dp"
+            android:text="订 阅"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@drawable/concor_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="85dp"
+        android:id="@+id/hg_lin_bottom"
+        android:layout_below="@+id/hg_lin_top"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true">
+        <!--        帮助-->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:id="@+id/hg_btn_help"
+            android:text="帮 助"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@drawable/concor_button" />
+        <!--        关于-->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:id="@+id/hg_btn_about"
+            android:layout_marginLeft="15dp"
+            android:text="关 于"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@drawable/concor_button" />
+    </LinearLayout>
+
+</RelativeLayout>

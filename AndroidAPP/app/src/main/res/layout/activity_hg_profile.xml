@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage">
+
+    <Button
+        android:id="@+id/hg_profile_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/hg_profile_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/photo_user01"
+        android:src="@drawable/hg_circle_images" />
+
+
+    <LinearLayout
+        android:id="@+id/hg_profile_lin_only"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/hg_profile_iv"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+<!--    手机号-->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/hg_profie_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintEnd_toStartOf="@+id/EtReAcnt"
+                app:layout_constraintTop_toTopOf="@+id/EtReAcnt" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/EtReAcnt" android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <EditText
+                android:id="@+id/hg_profie_EtReAcnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"/>
+
+        </LinearLayout>
+<!--密码-->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/hg_profie_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintEnd_toStartOf="@+id/EtRePwd"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"/>
+
+
+            <EditText
+                android:id="@+id/hg_profie_EtRePwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number|textPassword"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/EtReAcnt" app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="3dp" android:layout_marginRight="3dp"/>
+
+        </LinearLayout>
+<!--姓名-->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/hg_profie_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintEnd_toStartOf="@+id/EtReName"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <EditText
+                android:id="@+id/hg_profie_EtReName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/EtRePwd" app:layout_constraintStart_toEndOf="@+id/tv_name"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="3dp" android:layout_marginRight="3dp"/>
+
+        </LinearLayout>
+<!--邮箱-->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/hg_profie_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" app:layout_constraintEnd_toStartOf="@+id/EtReEmail"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <EditText
+                android:id="@+id/hg_profie_EtReEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/EtReName" app:layout_constraintStart_toEndOf="@+id/tv_email"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="3dp" android:layout_marginRight="3dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="85dp"
+        android:id="@+id/hg_profile_lin_top"
+        android:layout_below="@+id/hg_profile_lin_only"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true">
+        <!--        资料-->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:id="@+id/hg_profie_btn_profile"
+            android:text="Submit"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@drawable/concor_button" />
+
+        <!--        订阅-->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:id="@+id/hg_profie_btn_subscribe"
+            android:layout_marginLeft="15dp"
+            android:text="back"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@drawable/concor_button" />
+    </LinearLayout>
+
+</RelativeLayout>

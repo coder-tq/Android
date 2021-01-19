@@ -1,0 +1,8 @@
+package com.android.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProblemController {
+
+}

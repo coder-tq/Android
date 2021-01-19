@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".PkResultWinActivity"
+                android:background="@drawable/background_pk">
+
+    <Button
+            android:id="@+id/pkwin_btn_back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_back" />
+    <!--vs-->
+    <TextView
+            android:id="@+id/pkwin_tv_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="190dp"
+            android:text="V"
+            android:textColor="#15557E"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    <TextView
+            android:id="@+id/pkwin_tv_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pkwin_tv_v"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="10dp"
+            android:text="S"
+            android:textColor="#FF15557E"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    <!--竖条-->
+    <TextView
+            android:id="@+id/pkwin_tv_stick_top"
+            android:layout_width="10dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="225dp"
+            android:background="#FF15557E"/>
+
+    <TextView
+            android:id="@+id/pkwin_tv_stick_bottom"
+            android:layout_width="10dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/pkwin_tv_stick_top"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="225dp"
+            android:background="#FF15557E"/>
+
+    <!-- 自己-->
+    <ImageView
+            android:id="@+id/pkwin_iv_self"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/photo_user01"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="90dp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pkwin_tv_self"
+            android:layout_below="@+id/pkwin_iv_self"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="45dp"
+            android:text="user01"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+
+    <TextView
+            android:id="@+id/pkwin_tv_stick_left"
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/pkwin_tv_self"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="85dp"
+            android:background="#FDB60F35"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pkwin_tv_win"
+            android:text="胜利！"
+            android:textSize="60sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_below="@+id/pkwin_tv_stick_left"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="35dp"
+    />
+    <!--    对方-->
+    <ImageView
+            android:id="@+id/pkwin_iv_other"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/photo_user02"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="150dp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pkwin_tv_other"
+            android:layout_below="@+id/pkwin_iv_other"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="275dp"
+            android:text="user01"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+
+    <TextView
+            android:id="@+id/pkwin_tv_stick_right"
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/pkwin_tv_other"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="300dp"
+            android:background="#FDB60F35"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pkwin_tv_fail"
+            android:text="惜败！"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_below="@+id/pkwin_tv_stick_right"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="265dp"
+    />
+</RelativeLayout>

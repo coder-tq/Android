@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 手指触摸时的 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- 填充的颜色 -->
+            <solid android:color="#C8FFFFFF"
+                android:alpha="0.7"/>
+            <!-- 设置按钮的角为弧形 -->
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+
+    <!-- 默认的（触摸之前）button -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- 填充的颜色 -->
+            <solid android:color="#99FFFFFF"
+                android:alpha="0.7"/>
+            <!-- android:radius 弧形的半径 -->
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</selector>

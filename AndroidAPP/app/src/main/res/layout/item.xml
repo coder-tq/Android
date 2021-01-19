@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+>
+    <TextView android:id="@+id/discussTitle"
+              android:layout_height="40dp"
+              android:layout_width="fill_parent"
+              android:text="title"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              android:gravity="center"/>
+
+    <TextView android:id="@+id/discussAuthor"
+              android:layout_height="40dp"
+              android:layout_width="fill_parent"
+              android:layout_below="@+id/discussTitle"
+              android:drawableLeft="@drawable/user"
+              android:drawablePadding="10dp"
+              android:text="author"
+              android:gravity="center_vertical|left"
+              android:paddingLeft="20dp"
+              android:textSize="20sp"/>
+
+    <TextView android:id="@+id/discussContent"
+              android:layout_height="200dp"
+              android:text="content"
+              android:layout_width="fill_parent"
+              android:layout_below="@+id/discussAuthor"
+              android:paddingLeft="20dp"
+              android:gravity="center_vertical|left"
+              android:textSize="15sp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/discussContent">
+
+        <TextView
+                android:id="@+id/replyLike"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/like"
+                android:paddingTop="5dp"/>
+        <TextView
+                android:id="@+id/replyReplu"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/message"
+                android:paddingTop="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

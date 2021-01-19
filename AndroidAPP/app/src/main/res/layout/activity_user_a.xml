@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".UserAActivity"
+                android:background="@drawable/backgroud_wc">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1DFDFDFD">
+
+        <Button
+                android:id="@+id/wc_btn_back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_back" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wc_tv_afternoon"
+                android:text="战书"
+                android:textSize="40sp"
+                android:textColor="#000000"
+                android:layout_below="@+id/wc_btn_back"
+                android:layout_margin="50dp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+        <ImageView
+                android:id="@+id/iv_challenge"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/wc_tv_afternoon"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_challenge"
+                android:layout_margin="50dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wc_tv_waitting"
+                    android:text="等待挑战者"
+                    android:textSize="35sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:typeface="serif"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wc_iv_wait"
+                    android:background="@drawable/ic_waitting"
+                    android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

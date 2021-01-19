@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_task"
+                tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:id="@+id/tv1"
+            android:layout_marginTop="225dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+    <EditText
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:id="@+id/EtAcnt"
+            android:hint="输入您的手机号"
+            android:textColorHint="#95A1AA"
+            android:textColor="#ffffff"
+            android:selectAllOnFocus="true"
+            android:inputType="phone"
+            android:layout_toRightOf="@+id/tv1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="220dp"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+    <EditText
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:id="@+id/EtPwd"
+            android:hint="输入您的密码"
+            android:textColorHint="#95A1AA"
+            android:textColor="#ffffff"
+            android:selectAllOnFocus="true"
+            android:inputType="textPassword"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv2"
+            android:layout_below="@+id/EtAcnt"
+            android:layout_marginTop="30dp"
+    />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:text="Loin in"
+            android:layout_below="@+id/tv2"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="80dp"
+            android:background="#F3CE99"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Sign"
+            android:text="Sign in"
+            android:layout_below="@+id/tv2"
+            android:layout_toRightOf="@+id/btn_login"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:background="#F3CE99"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv3"
+            android:text="忘记口令"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_below="@+id/EtPwd"
+            android:layout_marginLeft="300dp"/>
+
+</RelativeLayout>

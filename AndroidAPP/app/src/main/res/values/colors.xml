@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- scanner -->
+    <color name="scan_mask">#60000000</color>
+    <color name="scan_laser">#cc0000</color>
+    <color name="scan_dot">#ff6600</color>
+    <color name="scan_result_view">#b0000000</color>
+    <color name="scan_result_dots">#c099cc00</color>
+
+    <color name="black_color">#000000</color>
+    <color name="white_normal">#ffffffff</color>
+    <color name="global_color">#F7F7F8</color>
+    <!--    回答正确-->
+    <color name="answer_right">#FF1A6709</color>
+    <!--    回答错误-->
+    <color name="answer_error">#DC284C</color>
+
+</resources>

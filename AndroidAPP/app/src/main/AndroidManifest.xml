@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.androidapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".Homepage">
+        </activity>
+        <activity android:name=".hg_profile">
+        </activity>
+        <activity android:name=".CreditActivity">
+        </activity>
+        <activity android:name=".TaskActivity">
+        </activity>
+        <activity android:name=".PkResultFailActivity">
+        </activity>
+        <activity android:name=".PkResultWinActivity">
+        </activity>
+        <activity android:name=".PkActivity">
+        </activity>
+        <activity android:name=".UserBActivity">
+        </activity>
+        <activity android:name=".UserAActivity">
+        </activity>
+        <activity android:name=".StatisticsActivity">
+        </activity>
+        <activity android:name=".ReplyEditActivity">
+        </activity>
+        <activity android:name=".ReplyActivity">
+        </activity>
+        <activity android:name=".GetPlanActivity">
+        </activity>
+        <activity android:name=".ForumEditActivity">
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity android:name=".DiscussActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

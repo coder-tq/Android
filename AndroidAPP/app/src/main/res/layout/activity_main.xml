@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:background="@drawable/background_main">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/photo_user01"
+            android:src="@drawable/circle_images" />
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/main_btn_champion"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:text="成为擂主"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@drawable/semicircle_top_button"/>
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/main_btn_challenge"
+            android:layout_below="@+id/main_btn_champion"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="发起挑战"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@drawable/semicircle_bottom_button"/>
+
+    <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="85dp"
+            android:id="@+id/main_lin_top_btns"
+            android:layout_below="@+id/main_btn_challenge"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true">
+        <!--        自测-->
+        <Button
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:id="@+id/main_btn_testself"
+                android:text="科举"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:background="@drawable/concor_button" />
+        <!--        领取，提交学习任务-->
+        <Button
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:id="@+id/main_btn_task"
+                android:layout_marginLeft="15dp"
+                android:text="悬赏"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:background="@drawable/concor_button" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="85dp"
+            android:id="@+id/main_lin_bottom_btns"
+            android:layout_below="@+id/main_lin_top_btns"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true">
+        <!--        统计学习情况，生成图表-->
+        <Button
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:id="@+id/main_btn_statistic"
+                android:text="情报"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:background="@drawable/concor_button" />
+        <!--        论坛-->
+        <Button
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:id="@+id/main_btn_talk"
+                android:layout_marginLeft="15dp"
+                android:text="茶馆"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:background="@drawable/concor_button" />
+    </LinearLayout>
+
+</RelativeLayout>
